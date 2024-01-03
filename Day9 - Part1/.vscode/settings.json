@@ -55,8 +55,6 @@
         "sstream": "cpp",
         "algorithm": "cpp",
         "optional": "cpp",
-        "regex": "cpp",
-        "map": "cpp",
-        "xtree": "cpp"
+        "regex": "cpp"
     }
 }
