@@ -111,21 +111,10 @@ int main()
         sections.push_back(currentSection);
     }
 
-    std::vector<std::string> seeds = sections.at(0);
-    std::vector<std::string> seedtosoil = sections.at(1);
-    std::vector<std::string> soiltofert = sections.at(2);
-    std::vector<std::string> ferttowater = sections.at(3);
-    std::vector<std::string> watertolight = sections.at(4);
-    std::vector<std::string> lighttotemp = sections.at(5);
-    std::vector<std::string> temptohumid = sections.at(6);
-    std::vector<std::string> humidtoloc = sections.at(7);
-
-    std::vector<int> drs;
-    std::vector<int> srs;
-    std::vector<int> rl;
+    
     std::vector<int> intseeds;
 
-    std::istringstream iss(seeds.at(0));
+    std::istringstream iss((sections.at(0)).at(0));
     std::string head, n1, n2, n3, n4;
     while (iss >> head >> n1 >> n2 >> n3 >> n4)
     {
